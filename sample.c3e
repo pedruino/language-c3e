@@ -1,0 +1,7 @@
+#while
+INICIO:
+  E.COD
+  IF T1 = 0 GOTO 'END'
+  S.COD
+  GOTO 'INICIO'
+END:

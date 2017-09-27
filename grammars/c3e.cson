@@ -1,0 +1,37 @@
+'scopeName': 'source.c3e'
+'name': 'C3E'
+'fileTypes': [
+  'c3e',
+]
+'patterns': [
+  {
+    'match': '^\\s*#.*$'
+    'name': 'comment'
+  },
+  {
+    'match': '(?i)(if|goto)';
+    'name': 'keyword.control.c3e';
+  },
+  {
+    'match': '([a-zA-Z_$][a-zA-Z_$0-9]+:$)';
+    'name': 'entity.name.function.c3e';
+  },
+  {
+    'match': "\\b((([0-9\\_]+\\.[0-9\\_]*)(e[+-]?[0-9\\_]+)?|\\.?[0-9\\_]+e[+-]?[0-9\\_]+))\\b"
+    'name': "constant.numeric.floating-point.c3e"
+  }
+  {
+    'match': "\\b((0d[0-9\\_]+)|([0-9\\_]+d?))\\b"
+    'name': "constant.numeric.dec.c3e"
+  },
+  {
+    'name': 'string.quoted.double.c3e',
+    'begin': '"',
+    'end': '"',
+  },
+  {
+    'name': 'string.quoted.single.c3e',
+    'begin': "'",
+    'end': "'",
+  },
+]
